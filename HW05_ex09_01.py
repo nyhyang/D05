@@ -8,10 +8,18 @@
 
 # Body
 
+def twentywords_ormore():
+	fin = open('word.txt')
+	for line in fin:
+		word = line.strip()
+		if len(word) > 20:
+			print word
+
 
 ##############################################################################
 def main():
-    pass  # Call your functions here.
+    
+    twentywords_ormore()
 
 if __name__ == '__main__':
     main()
